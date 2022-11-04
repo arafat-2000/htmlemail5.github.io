@@ -26,7 +26,17 @@
         #more {
             display: none;
         }
+        #more2{
+            display: none;
+        }
         #myBtn{
+            border: none;
+            background-color: #fff;
+            color:rgb(1, 159, 1);
+            font-size: 14px;
+            
+        }
+        #myBtn2{
             border: none;
             background-color: #fff;
             color:rgb(1, 159, 1);
@@ -54,6 +64,23 @@
             moreText.style.display = "inline";
         }
         } 
+
+        function ourFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more2");
+        var btnText = document.getElementById("myBtn2");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+        }
+        } 
+
     </script>
 </head>
 <body>
@@ -83,7 +110,7 @@
                     <p style="margin-left:20px;font-weight: 600;">Overview:</p>
                     <p style="margin-left:20px;">Many new leaders struggle with questions like "How much should I show strong direction vs. allow people to figure things out for themselves?" "How do I coach others effectively without constricting their creativity and How do I hold people accountable to standards that are important to the team's success without alienating team members?" These are all challenges we will explore and practice in this experiential workshop. Other new leader topics will explore include: "How much responsibility should I take on for the motivation and engagement of my team?" and "How do I work through skepticism and doubts the team may have about what we must deliver?<span id="dots">...</span><span id="more">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea doloremque, eos minima inventore fugit praesentium dolores ad optio enim ipsam ratione aspernatur culpa distinctio delectus, similique cumque rerum? Nemo, cupiditate.</span><button onclick="myFunction()" id="myBtn">Read more</button> </p><br>
                     <p style="margin-left:20px;font-weight: 600;">Speaker:</p>
-                    <p style="margin-left:20px;"><span style="font-weight:600;"> Rich McLaughlin Rich</span> has been an observer and practitioner of innovation and employee engagement processes for over 20 years. He has over 13,000 hours designing and facilitating leadership and interpersonal skills workshops, and innovation explorations with teams to help them jump start their change and innovation efforts. <span id="dots">...</span><span id="more">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea doloremque, eos minima inventore fugit praesentium dolores ad optio enim ipsam ratione aspernatur culpa distinctio delectus, similique cumque rerum? Nemo, cupiditate.</span><button onclick="myFunction()" id="myBtn">Read more</button> </p><br>
+                    <p style="margin-left:20px;"><span style="font-weight:600;"> Rich McLaughlin Rich</span> has been an observer and practitioner of innovation and employee engagement processes for over 20 years. He has over 13,000 hours designing and facilitating leadership and interpersonal skills workshops, and innovation explorations with teams to help them jump start their change and innovation efforts. <span id="dots">...</span><span id="more2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea doloremque, eos minima inventore fugit praesentium dolores ad optio enim ipsam ratione aspernatur culpa distinctio delectus, similique cumque rerum? Nemo, cupiditate.</span><button onclick="ourFunction()" id="myBtn2">Read more</button> </p><br>
 
                     
 
